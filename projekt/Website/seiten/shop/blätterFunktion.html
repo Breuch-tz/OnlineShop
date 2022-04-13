@@ -1,0 +1,9 @@
+<div id="seiten">
+  <form action="shop.html" method="post">
+    <input id="seite" type="submit" name="prev" value="Vorherige Seite" />
+    <?php 
+    echo  ($_SESSION["aktseite"]);
+    ?>
+    <input id="seite" type="submit" name="next" value="Nächste Seite" />
+  </form>
+</div>

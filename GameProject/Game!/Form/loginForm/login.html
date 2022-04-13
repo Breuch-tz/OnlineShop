@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <?php SESSION_START();?>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game!</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <?php include '../../functions/userId.php';?>
+    <form action="login.php" method="POST" autocomplete="off">
+      <div class="form">
+        <div
+          id="error"
+          style="
+            width: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(255, 0, 0, 0.56);
+          "
+        >
+          <?php 
+          if(isset($_SESSION["loginError"])){
+            echo $_SESSION["loginError"];
+          }else{
+            echo "";
+          };
+          unset($_SESSION['loginError']);
+          ?>
+        </div>
+        <label for="username"><b>Username</b></label>
+        <br />
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="uname"
+          id="uname"
+          required
+        />
+        <br />
+
+        <label for="password"><b>Password</b></label>
+        <br />
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="pw"
+          id="pw"
+          required
+        />
+        <br />
+
+        <button name="submit" type="submit">Login</button>
+        <br />
+        <a href="../regForm/reg.html">Regristration</a>
+        <br />
+        <a href="../forgotPwForm/forgotPw.html">forgotten password?</a>
+      </div>
+    </form>
+  </body>
+</html>

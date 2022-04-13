@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="stylesheet" href="../body.css" />
+    <link rel="stylesheet" href="../footer.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="stylesheet" href="nav.css" />
+
+    <title>Website</title>
+  </head>
+  <body id="body">
+    <?php include "../header.html" ?>
+
+    <div id="wrapper">
+      <main>
+        <div class="sidenav">
+          <form>
+            <div class="multiselect">
+              <div class="selectBox" onclick="showCheckboxes()">
+                <select>
+                  <option>Select an option</option>
+                </select>
+                <div class="overSelect"></div>
+              </div>
+              <div id="checkboxes">
+                <label for="one">
+                  <input type="checkbox" id="one" />First checkbox</label
+                >
+                <label for="two">
+                  <input type="checkbox" id="two" />Second checkbox</label
+                >
+                <label for="three">
+                  <input type="checkbox" id="three" />Third checkbox</label
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="content">
+          <div class="innertube">
+            <div class="content-grid">
+              <!-- <div class="contentdiv2">
+                <div id="content2">
+                  <?php
+                  require 'filter.php';
+                ?>
+                </div>
+              </div> -->
+
+              <div class="contentdiv1">
+                <div id="content1">
+                  <ul id="grid">
+                    <?php
+                    require 'shopdatabase.php';
+                    ?>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- <?php
+              require 'blätterFunktion.html';
+            ?> -->
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer id="footer">
+      <div class="innertube">
+        <p>Footer...</p>
+      </div>
+    </footer>
+    <script src="nav.js"></script>
+  </body>
+</html>

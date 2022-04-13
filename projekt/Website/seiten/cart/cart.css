@@ -1,0 +1,34 @@
+#summe {
+  text-align: right;
+  margin: 1%;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 100%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.gridBlockA {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.gridBlockB {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.summe-bestellen {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2, 50%);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.summe {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.bestellen {
+  grid-area: 2 / 1 / 3 / 2;
+}

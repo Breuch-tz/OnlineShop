@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game!</title>
+    <link rel="stylesheet" href="reg.css" />
+  </head>
+  <body>
+    <form
+      action="createAccount.php"
+      method="post"
+      autocomplete="off"
+      enctype="multipart/form-data"
+    >
+      <div class="form">
+        <label for="username"><b>Username</b></label>
+        <br />
+        <input type="text" placeholder="Enter Username" name="uname" required />
+        <br />
+        <label for="e-mail"><b>E-mail</b></label>
+        <br />
+        <input type="email" placeholder="Enter E-Mail" name="email" required />
+        <br />
+
+        <label for="password"><b>Password</b></label>
+        <br />
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="pw"
+          required
+        />
+        <br />
+
+        <label for="password"><b>Repeat password</b></label>
+        <br />
+        <input
+          type="password"
+          placeholder="Repeat Password"
+          name="repeatpw"
+          required
+        />
+        <br />
+
+        <button name="submit" type="submit">Create Account!</button>
+      </div>
+    </form>
+  </body>
+</html>

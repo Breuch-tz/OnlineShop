@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Liste</title>
+  </head>
+  <body>
+    <form
+      action="insertrows.php"
+      method="post"
+      autocomplete="off"
+      enctype="multipart/form-data"
+    >
+      <div>
+        <input type="text" placeholder="Seriennummer" name="snum" id="snum" />
+      </div>
+      <div><input type="text" placeholder="Produktname" name="produkt" /></div>
+      <div>
+        <input type="number" placeholder="Preis" name="preis" step=".01" />
+      </div>
+      <div>
+        <textarea
+          placeholder="Beschreibung"
+          name="descr"
+          id="descr"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div>
+        <select placeholder="Kategorie" name="kat" id="kat">
+          <option value="">--choose a Kategorie--</option>
+          <option value="Uhren">Uhren</option>
+          <option value="Ketten">Ketten</option>
+          <option value="Zubehör">Zubehör</option>
+        </select>
+      </div>
+      <div>
+        <select placeholder="typs" name="type" id="type">
+          <option value="">--choose a Type--</option>
+          <option value="Gold">Gold</option>
+          <option value="Silber">Silber</option>
+          <option value="Platin">Platin</option>
+        </select>
+      </div>
+      <div>
+        <input type="file" name="image" id="img" /><br />
+        <input type="file" name="image2" id="img2" />
+      </div>
+      <div>
+        <button type="submit" name="submit" id="">Add to List</button>
+      </div>
+    </form>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Seriennummer</th>
+        <th>Produkt</th>
+        <th>Preis</th>
+        <th>Beschreibung</th>
+        <th>Kategorie</th>
+        <th>Typ</th>
+        <th>Bilder</th>
+        <th>delete</th>
+        <th>edit</th>
+      </tr>
+      <?php
+      require 'displayrows.php';
+      ?>
+    </table>
+  </body>
+</html>
