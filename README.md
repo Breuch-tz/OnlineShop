@@ -1,12 +1,11 @@
 # OnlineShop
-replace in xampp
-folder: htdocs with OnlineShop-master an rename it to htdocs
+replace in xampp > folder: htdocs with OnlineShop-master an rename it to htdocs;
 
-go to http://localhost/phpmyadmin > new database > name it produktliste > import the extracted zip(produktliste.sql.zip)
-go to produktliste > produkte > structure > edit the ID row > turn on A_I > safe it 
+go to http://localhost/phpmyadmin > new database > name it produktliste > import the extracted zip(produktliste.sql.zip);
+go to produktliste > produkte > structure > edit the ID row > turn on A_I > safe it;
 
-search : http://localhost/projekt/Liste/index.html  to add new products 
-search : http://localhost/projekt/Website/seiten/home/home.html to view what yo added 
+search : http://localhost/projekt/Liste/index.html  to add new products; 
+search : http://localhost/projekt/Website/seiten/home/home.html to view what yo added; 
 
 
 
